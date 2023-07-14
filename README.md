@@ -7,6 +7,9 @@ A simple Chrome extension to fix Dungeons and Dragons Online old forum links.
 - Click the Developer Mode switch (top right).
 - Click Load Unpacked (top left).
 - Select the folder into which you extracted the files.
-- Navigate to forums.ddo.com
+- **Important** Navigate to forums.ddo.com
 
-Old DDO forum links should now work.
+### Update
+- Extract the zip into the same folder
+- Go to chrome://extensions/
+- Click the refresh button on the extension card.
