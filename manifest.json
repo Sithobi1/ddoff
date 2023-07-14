@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "DDO Forum Fixer",
+  "description": "Redirects from forums.ddo.com to forums-old when necessary",
+  "version": "0.1",
+  "action": {
+  },
+  "background": {
+    "service_worker": "redir.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://forums.ddo.com/*"],
+      "js": ["worker_unreg.js"]
+    }
+  ],
+  "permissions": [
+    "webRequest"
+  ],
+  "host_permissions": [
+    "*://forums.ddo.com/*"
+  ]
+}
