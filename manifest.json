@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "DDO Forum Fixer",
   "description": "Redirects from forums.ddo.com to forums-old when necessary",
-  "version": "0.1",
+  "version": "0.1.1",
   "action": {
   },
   "background": {

@@ -3,7 +3,7 @@ const DDOMAINTURL = "http://maintenance.daybreakgames.com/";
 
 chrome.webRequest.onBeforeRedirect.addListener(
   function (details) {
-    if (details.redirectUrl == DDOMAINTURL) {
+    if (details.redirectUrl.startsWith(DDOMAINTURL)) {
       url = new URL(details.url);
       if (url.hostname == "forums.ddo.com" && url.pathname.startsWith("/forum")) {
         console.log("redirecting to forums-old");
